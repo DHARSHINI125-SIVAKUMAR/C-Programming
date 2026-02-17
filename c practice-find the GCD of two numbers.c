@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int A, B, gcd = 1;
+
+   
+    scanf("%d %d", &A, &B);
+
+
+    for(int i = 1; i <= (A < B ? A : B); i++) {
+        if(A % i == 0 && B % i == 0) {
+            gcd = i;
+        }
+    }
+
+  
+    printf("%d\n", gcd);
+
+    return 0;
+}
+
