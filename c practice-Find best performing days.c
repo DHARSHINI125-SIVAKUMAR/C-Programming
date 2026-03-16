@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int n;
+    int i;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    int max=arr[n-1];
+    printf("%d",max);
+
+    for(i=n-2;i>=0;i--)
+    {
+        if(arr[i]>=max)
+        {
+            printf("%d",arr[i]);
+            max=arr[i];
+        }
+    }
+    return 0;
+}
